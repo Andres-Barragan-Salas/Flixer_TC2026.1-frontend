@@ -1,0 +1,86 @@
+.signup-screen {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+.signup-screen .signup-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 450px;
+    width: 100%;
+}
+
+.signup-screen .title {
+    font-weight: normal;
+    margin-bottom: 40px;
+    font-size: 36px;
+}
+
+.signup-screen .signup-form {
+    background-color: var(--white-panel);
+    align-self: stretch;
+    padding: 40px 60px;
+    border-radius: 20px;
+}
+
+.signup-screen .signup-form > h2 {
+    font-weight: normal;
+}
+
+.signup-screen .signup-form > p {
+    color: var(--white-text);
+    margin-bottom: 30px
+}
+
+.signup-screen .signup-form > p.error-message {
+    color: #fff;
+    margin-bottom: 0;
+    position: absolute;
+}
+
+.signup-screen .signup-input {
+    position: relative;
+}
+
+.signup-screen .signup-input > i {
+    position: absolute;
+    top: 9px; left: 20px;
+    font-size: 20px;
+}
+
+.signup-screen .signup-input > input {
+    background: none;
+    border: none;
+    width: 100%;
+    border: 2px solid var(--white-outline);
+    border-radius: 8px;
+    padding: 10px 15px 10px 55px;
+    margin-bottom: 15px;
+    color: #fff;
+}
+
+.signup-screen .signup-input > input:focus {
+    outline: none;
+    border: 2px solid var(--action-blue);
+}
+
+.signup-screen .button.primary {
+    width: 100%;
+    margin-top: 40px;
+}
+
+.signup-screen .login-prompt {
+    margin-top: 30px;
+}
+
+.signup-screen .login-prompt > p {
+    display: inline-block;
+    color: var(--white-text);
+    margin: 0;
+    margin-right: 5px;
+}

@@ -1,0 +1,138 @@
+.lists-screen {
+    display: flex;
+	align-items: center;
+	flex-direction: column;
+	flex: 1;
+}
+
+.lists-screen .safe-area {
+	width: 100%;
+	max-width: var(--max-width);
+    padding: 30px;
+}
+
+.lists-screen .screen-top {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 40px;
+}
+
+.lists-screen .screen-top h1 {
+    font-weight: normal;
+    margin-bottom: 0;
+}
+
+.lists-screen .screen-top h1 span {
+    color: var(--white-text);
+}
+
+.lists-screen .screen-top button {
+    cursor: pointer;
+    border: none;
+    background: #fff;
+    padding: 0 20px;
+    border-radius: 5px;
+    color: var(--main-color);
+}
+
+.lists-screen .screen-top button:hover {
+    opacity: 0.8;
+}
+
+.lists-screen .list-display {
+    cursor: pointer;
+    background: var(--white-panel);
+    padding: 30px;
+    border-radius: 10px;
+    display: block;
+}
+
+.lists-screen .list-display:hover {
+    opacity: 0.8;
+}
+
+.lists-screen .list-display .list-top {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 10px;
+    border-bottom: 1px solid var(--white-outline);
+}
+
+.lists-screen .list-display .list-top h3 {
+    color: #fff;
+    margin: 0;
+}
+
+.lists-screen .list-display .list-top button {
+    cursor: pointer;
+    border: none;
+    background: none;
+    color: #fff;
+    font-size: 20px;
+}
+
+.lists-screen .list-display .list-top button:hover {
+    opacity: 0.8;
+}
+
+.lists-screen .list-display .usernames {
+    font-weight: normal;
+    color: var(--white-text);
+    margin-top: 5px;
+}
+
+.list-creation {
+    background: #fff;
+    width: 100%;
+    padding: 40px;
+    border-radius: 20px;
+}
+
+.list-creation .list-creation-input {
+    position: relative;
+}
+
+.list-creation .list-creation-input > i {
+    position: absolute;
+    top: 9px; left: 20px;
+    font-size: 20px;
+}
+
+.list-creation .list-creation-input > input {
+    background: none;
+    border: none;
+    width: 100%;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    padding: 10px 15px 10px 55px;
+    margin-bottom: 15px;
+}
+
+.list-creation .list-creation-input > input:focus {
+    outline: none;
+    border: 2px solid var(--action-blue);
+}
+
+.list-creation .options-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.list-creation .options-container .error-message {
+    color: red;
+    margin: 0;
+}
+
+.list-creation .options-container button {
+    cursor: pointer;
+	border: none;
+	padding: 12px;
+	border-radius: 8px;
+    background: var(--action-blue);
+	color: #fff;
+}
+
+.list-creation .options-container button:hover {
+	opacity: 0.8;
+}

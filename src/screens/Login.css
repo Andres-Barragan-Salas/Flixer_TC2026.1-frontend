@@ -1,0 +1,86 @@
+.login-screen {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+.login-screen .login-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 450px;
+    width: 100%;
+}
+
+.login-screen .title {
+    font-weight: normal;
+    margin-bottom: 40px;
+    font-size: 36px;
+}
+
+.login-screen .login-form {
+    background-color: var(--white-panel);
+    align-self: stretch;
+    padding: 40px 60px;
+    border-radius: 20px;
+}
+
+.login-screen .login-form > h2 {
+    font-weight: normal;
+}
+
+.login-screen .login-form > p {
+    color: var(--white-text);
+    margin-bottom: 30px;
+}
+
+.login-screen .login-form > p.error-message {
+    color: #fff;
+    margin-bottom: 0;
+    position: absolute;
+}
+
+.login-screen .login-input {
+    position: relative;
+}
+
+.login-screen .login-input > i {
+    position: absolute;
+    top: 9px; left: 20px;
+    font-size: 20px;
+}
+
+.login-screen .login-input > input {
+    background: none;
+    border: none;
+    width: 100%;
+    border: 2px solid var(--white-outline);
+    border-radius: 8px;
+    padding: 10px 15px 10px 55px;
+    margin-bottom: 15px;
+    color: #fff;
+}
+
+.login-screen .login-input > input:focus {
+    outline: none;
+    border: 2px solid var(--action-blue);
+}
+
+.login-screen .button.primary {
+    width: 100%;
+    margin-top: 40px;
+}
+
+.login-screen .singup-prompt {
+    margin-top: 30px;
+}
+
+.login-screen .singup-prompt > p {
+    display: inline-block;
+    color: var(--white-text);
+    margin: 0;
+    margin-right: 5px;
+}

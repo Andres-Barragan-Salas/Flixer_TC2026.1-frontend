@@ -1,0 +1,21 @@
+.not-found-screen {
+    display: flex;
+	align-items: center;
+	flex-direction: column;
+	flex: 1;
+}
+
+.not-found-screen .safe-area {
+	width: 100%;
+	max-width: var(--max-width);
+    padding: 30px;
+}
+
+.not-found-screen h1 {
+    font-weight: normal;
+    margin-bottom: 40px;
+}
+
+.not-found-screen h1 span {
+    color: var(--white-text);
+}

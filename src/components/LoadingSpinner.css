@@ -1,0 +1,18 @@
+.loading-spinner {
+    color: #fff;
+    display: flex;
+    justify-content: center;
+}
+
+.loading-spinner.hidden {
+    display: none;
+}
+
+.loading-spinner.centered {
+    width: 100%;
+    padding: 150px 0;
+}
+
+.loading-spinner.colored {
+    color: var(--main-color);
+}

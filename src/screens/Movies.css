@@ -1,0 +1,103 @@
+.movies-screen {
+    display: flex;
+	align-items: center;
+	flex-direction: column;
+	flex: 1;
+}
+
+.movies-screen .safe-area {
+	width: 100%;
+	max-width: var(--max-width);
+    padding: 30px;
+}
+
+.movies-screen h1 {
+    font-weight: normal;
+    margin-bottom: 40px;
+}
+
+.movies-screen h1 span {
+    color: var(--white-text);
+}
+
+.movies-screen .movie-display {
+    display: flex;
+    margin-bottom: 50px;
+}
+
+.movies-screen .movie-display .movie-image {
+    position: relative;
+    margin-right: 50px;
+}
+
+.movies-screen .movie-display .movie-image img {
+    width: 200px;
+    overflow: hidden;
+    border-radius: 20px;
+}
+
+.movies-screen .movie-display .movie-image label {
+    position: absolute;
+    background: var(--highlight-color);
+    top: 40px; right: -10px;
+    padding: 2px 8px;
+    border-radius: 5px;
+}
+
+.movies-screen .movie-display .info-container {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.movies-screen .movie-display .movie-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-bottom: 3px;
+}
+
+.movies-screen .movie-display .movie-top h2 {
+    margin: 0;
+}
+
+.movies-screen .movie-display .movie-top .average {
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    margin-left: 10px;
+}
+
+.movies-screen .movie-display .movie-top .average i {
+    color: var(--highlight-color);
+    margin-right: 5px;
+    font-size: 24px;
+}
+
+.movies-screen .movie-display .movie-info > p {
+    margin-top: 20px;
+    color: var(--white-text);
+}
+
+.movies-screen .options-container {
+    margin: 20px 0;
+    display: flex;
+}
+
+.movies-screen .options-container button {
+    cursor: pointer;
+    border: none;
+    width: 50px;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    font-size: 30px;
+    margin-right: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.movies-screen .options-container button:hover {
+    opacity: 0.8;
+}
