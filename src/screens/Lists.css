@@ -45,6 +45,7 @@
     padding: 30px;
     border-radius: 10px;
     display: block;
+    margin-bottom: 20px;
 }
 
 .lists-screen .list-display:hover {

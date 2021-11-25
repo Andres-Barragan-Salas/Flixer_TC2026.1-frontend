@@ -31,7 +31,7 @@
 }
 
 .movies-screen .movie-display .movie-image img {
-    width: 200px;
+    width: clamp(150px, 15vw, 200px);
     overflow: hidden;
     border-radius: 20px;
 }
@@ -100,4 +100,20 @@
 
 .movies-screen .options-container button:hover {
     opacity: 0.8;
+}
+
+@media only screen and (max-width: 450px) {
+    .movies-screen .movie-display {
+        flex-direction: column;
+    }
+
+    .movies-screen .movie-display .movie-image {
+        margin-right: 0;
+    }
+
+    .movies-screen .movie-display .movie-image img {
+        width: 100%;
+        aspect-ratio: 2;
+        object-fit: cover;
+    }
 }

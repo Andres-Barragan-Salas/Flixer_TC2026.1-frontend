@@ -13,7 +13,7 @@
 
 .details-screen h1 {
     font-weight: normal;
-    margin-bottom: 40px;
+    margin: 0;
 }
 
 .details-screen h1 span {
@@ -26,6 +26,7 @@
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
+    margin-bottom: 40px;
 }
 
 .details-screen .horizontal-container button {
@@ -58,7 +59,7 @@
 }
 
 .details-screen .movie-display .movie-image img {
-    width: 200px;
+    width: clamp(150px, 15vw, 200px);
     overflow: hidden;
     border-radius: 20px;
 }
@@ -183,4 +184,36 @@
 
 .user-addition .options-container button:hover {
 	opacity: 0.8;
+}
+
+@media only screen and (max-width: 900px) {
+    .details-screen .movies-container {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    .details-screen .horizontal-container {
+        flex-direction: column;
+    }
+
+    .details-screen h1 {
+        margin-bottom: 10px;
+    }
+}
+
+@media only screen and (max-width: 450px) {
+    .details-screen .movie-display {
+        flex-direction: column;
+    }
+
+    .details-screen .movie-display .movie-image {
+        margin-right: 0;
+    }
+
+    .details-screen .movie-display .movie-image img {
+        width: 100%;
+        aspect-ratio: 2;
+        object-fit: cover;
+    }
 }

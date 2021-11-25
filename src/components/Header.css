@@ -46,6 +46,9 @@
     font-weight: normal;
     padding-bottom: 5px;
     color: var(--white-text);
+}
+
+.flixer-header .header-container a:not(:last-child) {
     margin-right: 40px;
 }
 
@@ -102,3 +105,23 @@
     border-style: solid;
     border-color: transparent transparent #fff;
   }
+
+@media only screen and (max-width: 700px) {
+    .flixer-header .header-container {
+        flex-direction: column-reverse;
+        align-items: flex-start;
+    }
+
+    .flixer-header .header-right {
+        align-self: flex-end;
+        margin-bottom: 15px;
+    }
+
+    .flixer-header .header-container h1 {
+        margin-right: 20px;
+    }
+
+    .flixer-header .header-container a:not(:last-child) {
+        margin-right: 20px;
+    }
+}
